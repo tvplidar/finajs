@@ -19,7 +19,7 @@ const dbPool = mysql.createPool({
   waitForConnections: true,
   connectionLimit: 10,
   queueTimeout: 0,
-});
+}); 
 
 // Middleware to make the database pool available in request objects
 app.use(async (req, res, next) => {
